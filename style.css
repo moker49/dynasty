@@ -62,11 +62,12 @@ ul.tab li a:focus, .active {
 .tabordion section article {
   display: none;
   left: 230px;
-  min-width: 300px;
+  #min-width: 512px;
   padding: 0 0 0 21px;
   position: absolute;  
   top: 0;
   height: 0px;
+  width: 80%;
 }
 .tabordion section article:after {
   background-color: #ccc;
@@ -121,7 +122,7 @@ ul.tab li a:focus, .active {
 	width: 100%;
   }
 }
-@media (min-width: 1366px) {
+@media (min-width: 1024px) {
   h1 {
 	width: 100%;
   }
@@ -130,7 +131,17 @@ ul.tab li a:focus, .active {
 	width: 100%;
   }
 }
-
+.char{
+	max-width: 512px;
+}
+.weapon{
+	width: 220px;
+	padding-right: 10px;
+}
+.stage_img{
+	width: 512px;
+	padding-right: 10px;
+}
 /* Kingdoms */
 .alliance{
 	color: #886600;

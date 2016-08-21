@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		
-		<h1>Dynasty</h1>
+		<h1>Dynasty Warriors 5</h1>
 
 		<ul class="tab">
 		  <li><a href="#" class="tablinks" onclick="openSection(event, 'Stages')">Stages</a></li>
@@ -18,7 +18,7 @@
 			<div class="tabordion">
 				<section>
 						<input type="radio" name="sections" id="stage-1">
-						<label for="stage-1">Battle of Xi Liang</label>
+						<label for="stage-1">Battle A1</label>
 						<article>
 						</article>
 				</section>
@@ -27,7 +27,7 @@
 					<label for="stage-25">Battle of Fan Castle</label>
 					<article>
 						<h2>Battle of Fan Castle (219 a.d.)</h2>
-						<img src="img/stage/25.png"/>
+						<img class="stage_img" src="img/stage/25.png" align="left"/>
 						<table>
 							<tr>
 								<th class="shu">SHU ****</th>
@@ -100,6 +100,7 @@
 								<td class="wu">.</th>
 							</tr>
 						</table>
+						</br></br></br></br>
 						<section>
 							<h3>Triggers/Events</h3>
 							<ul>
@@ -150,16 +151,54 @@
 					<article>
 					</article>
 				</section>
-				<section>
+				<!--<section>
 					<input type="radio" name="sections" id="guanping">
 					<label for="guanping">Guan Ping</label>
 					<article>
-					</article>
+					</article>-->
 				</section>
 				<section>
 					<input type="radio" name="sections" id="guanyu">
 					<label for="guanyu">Guan Yu</label>
 					<article>
+					<h2>Guan Yu (?-219)</h2>
+						<img class="char" src="img/char/guanyu.jpeg" align="left"/>
+						<section>
+							<h4>Available from the beggining</h4>
+							<table>
+								<tr>
+									<td>Battle of Si Shui Gate</td>
+								</tr>
+								<tr>
+									<td>Battle of Hu Lao Gate</td>
+								</tr>
+								<tr>
+									<td>Battle of Guan Du</td>
+								</tr>
+								<tr>
+									<td>Guan Yu's escape</td>
+								</tr>
+								<tr>
+									<td>Escape from Chi Bi</td>
+								</tr>
+								<tr>
+									<td>Battle of Fan Castle</td>
+								</tr>
+							</table>
+							<section>
+								<h4>4th Weapon</h4>
+								<p>
+									<img class="weapon" src="img/4th/guanyu.jpg" align="left"/>
+									<ul>
+										<b>Blue Moon Dragon</b></br>
+										Base Attack: 38; Weight: Light</br>
+										Attack +18, Defense +17, Life +18, Charge +16, Horse +16
+									</ul>
+								</p>
+								<h5>Battle of Fan Castle (Shu)</h5>
+								<p>Defeat Niu Jin and Yue Jin before the water attack is triggered.</p>
+							</section>
+						</section>
 					</article>
 				</section>
 				<section>
@@ -178,13 +217,88 @@
 		</div>
 
 		<div id="Items" class="tabcontent">
-			<h3>Items</h3>
-			<p></p>
+			<div class="tabordion">
+				<section>
+					<input type="radio" name="sections" id="rares">
+					<label for="rares">Rare Items</label>
+					<article>
+						<ul style="list-style-type:none">
+							<li>
+								<img class="weapon" src="img/item/armguards.jpg" align="left"/>
+								<h4>Arm Guards</h4>
+								<section>
+									Effect: No damage taken during charge attacks.</br></br>
+									Stage: Si Shui Gate (Dong Zhuo's Force)</br></br>
+									Requirements: Defeat Sun Jian before Cao Cao arrives with his reinforcements.
+								</section>
+							</li>
+							</br></br></br></br>
+							<li>
+								<img class="weapon" src="img/item/artofwar.jpg" align="left"/>
+								<h4>Art of War</h4>
+								<section>
+									Effect: Ability-boosting items last longer.</br></br>
+									Stage: Battle of Chi Bi (Cao Cao's Force)</br></br>
+									Requirements: Defeat Zhuge Liang right after his unit begins to retreat.
+								</section>
+							</li>
+						</ul>
+					</article>
+				</section>
+				<section>
+					<input type="radio" name="sections" id="mounts">
+					<label for="mounts">Mounts</label>
+					<article>
+					</article>
+				</section>
+				<section>
+					<input type="radio" name="sections" id="orbs">
+					<label for="orbs">Orbs</label>
+					<article>
+					</article>
+				</section>
+			</div>
 		</div>
 		
 		<div id="Bodyguards" class="tabcontent">
-			<h3>Bodyguards</h3>
-			<p></p>
+			<article>
+				<h3>Bodyguards</h3>
+				<p>Each bodyguard will receive a rating when they first ask to join your army. This rating determines how many stats (from life, musou, attack, and defence) that bodyguard will have max/near max when he reaches max level.</p>
+				<ul style="list-style-type:none">
+					<li><b>C</b>: One stat</li>
+					<li><b>B</b>: Two stats</li>
+					<li><b>A</b>: Three stats</li>
+					<li><b>S</b>: All stats</li>
+				</ul>
+				<p>The second rating determine how high initial stats are and how much they grow.</p>
+				<table>
+					<tr>
+						<th align="left">Ranking</th>
+						<th align="left">Initial stats</th>
+						<th align="left">Stat growth</th>
+					</tr>
+					<tr>
+						<td><b>Veteran</b></td>
+						<td>High</td>
+						<td>Slow</td>
+					</tr>
+					<tr>
+						<td><b>Remarkable</b></td>
+						<td>Average</td>
+						<td>Average</td>
+					</tr>
+					<tr>
+						<td><b>Brilliant</b></td>
+						<td>Slow</td>
+						<td>High</td>
+					</tr>
+					<tr>
+						<td><b>Superior</b></td>
+						<td>High</td>
+						<td>High</td>
+					</tr>
+				</table>
+			</article>
 		</div>
 		
 		<script>
