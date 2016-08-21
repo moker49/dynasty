@@ -1,0 +1,152 @@
+/* Tabs */
+body {font-family: "Lato", sans-serif;}
+ul.tab {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+ul.tab li {float: left;}
+ul.tab li a {
+	display: inline-block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 17px;
+}
+ul.tab li a:hover {
+	background-color: #ddd;
+}
+ul.tab li a:focus, .active {
+	background-color: #ccc;
+}
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	#border: 1px solid #ccc;
+	border-top: none;
+}
+
+/* Vertical Tabs */
+.tabordion {
+  color: #333;
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 100%;
+}
+.tabordion input[name="sections"] {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+.tabordion section {
+  display: block;
+}
+.tabordion section label {
+  background: #ccc;
+  border:1px solid #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 15px 20px;
+  position: relative;
+  width: 180px;
+  z-index:100;
+}
+.tabordion section article {
+  display: none;
+  left: 230px;
+  min-width: 300px;
+  padding: 0 0 0 21px;
+  position: absolute;  
+  top: 0;
+  height: 0px;
+}
+.tabordion section article:after {
+  background-color: #ccc;
+  bottom: 0;
+  content: "";
+  display: block;
+  left:-229px;
+  position: absolute;
+  top: 0;
+  width: 220px;
+  z-index:1;
+}
+.tabordion input[name="sections"]:checked + label { 
+  background: #eee;
+  color: #bbb;
+}
+.tabordion input[name="sections"]:checked ~ article {
+  display: block;
+}
+@media (max-width: 533px) {
+  h1 {
+	width: 100%;
+  }
+  .tabordion {
+	width: 100%;
+  }
+  .tabordion section label {
+	font-size: 1em;
+	width: 160px;
+  }
+ .tabordion section article {
+	left: 200px;
+	min-width: 270px;
+  } 
+  .tabordion section article:after {
+	background-color: #ccc;
+	bottom: 0;
+	content: "";
+	display: block;
+	left:-199px;
+	position: absolute;
+	top: 0;
+	width: 200px;
+  }  
+}
+@media (max-width: 768px) {
+  h1 {
+	width: 100%;
+  }
+
+  .tabordion {
+	width: 100%;
+  }
+}
+@media (min-width: 1366px) {
+  h1 {
+	width: 100%;
+  }
+
+  .tabordion {
+	width: 100%;
+  }
+}
+
+/* Kingdoms */
+.alliance{
+	color: #886600;
+}
+.dongzhuo{
+	
+}
+.lubu{
+	
+}
+.shu{
+	color: #006600;
+}
+.wei{
+	color: #000088;
+}
+.wu{
+	color: #880000;
+}

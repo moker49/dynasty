@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+		
+		<h1>Dynasty</h1>
+
+		<ul class="tab">
+		  <li><a href="#" class="tablinks" onclick="openSection(event, 'Stages')">Stages</a></li>
+		  <li><a href="#" class="tablinks" onclick="openSection(event, 'Characters')">Characters</a></li>
+		  <li><a href="#" class="tablinks" onclick="openSection(event, 'Items')">Items</a></li>
+		  <li><a href="#" class="tablinks" onclick="openSection(event, 'Bodyguards')">Bodyguards</a></li>
+		</ul>
+
+		<div id="Stages" class="tabcontent">
+			<div class="tabordion">
+				<section>
+						<input type="radio" name="sections" id="stage-1">
+						<label for="stage-1">Battle of Xi Liang</label>
+						<article>
+						</article>
+				</section>
+				<section>
+					<input type="radio" name="sections" id="stage-25">
+					<label for="stage-25">Battle of Fan Castle</label>
+					<article>
+						<h2>Battle of Fan Castle (219 a.d.)</h2>
+						<img src="img/stage/25.png"/>
+						<table>
+							<tr>
+								<th class="shu">SHU ****</th>
+								<th class="alliance">WEI ****</th> 
+								<th class="alliance">WU **</th>
+							</tr>
+							<tr>
+								<td class="shu"><b>(Guan Yu)</b></th>
+								<td class="wei"><b>Cao Ren</b></th> 
+								<td class="wu"><b>Lu Meng</b></b></th>
+							</tr>
+							<tr>
+								<td class="shu">-Ma Liang</th>
+								<td class="wei">-Yue Jin</th> 
+								<td class="wu">-Lu Xun</th>
+							</tr>
+							<tr>
+								<td class="shu">Guan Ping</th>
+								<td class="wei">-Niu Jin</th> 
+								<td class="wu">Jiang Quin</th>
+							</tr>
+							<tr>
+								<td class="shu">-Guan Suo</th>
+								<td class="wei">(Pang De)</th> 
+								<td class="wu">Xu Zheng</th>
+							</tr>
+							<tr>
+								<td class="shu">Zhou Cang</th>
+								<td class="wei">-Dong Heng</th> 
+								<td class="wu">-Zhu Ran</th>
+							</tr>
+							<tr>
+								<td class="shu">Liao Hua</th>
+								<td class="wei">-Dong Chao</th> 
+								<td class="wu">Pan Zhang</th>
+							</tr>
+							<tr>
+								<td class="shu">Mi Fang</th>
+								<td class="wei">Jiang Ji</th> 
+								<td class="wu">-Ma Zhong</th>
+							</tr>
+							<tr>
+								<td class="shu">Fu Shi Ren</th>
+								<td class="wei">-Man Chong</th> 
+								<td class="wu">.</th>
+							</tr>
+							<tr>
+								<td class="shu">Liu Feng</th>
+								<td class="wei">-Sun Lin</th> 
+								<td class="wu">.</th>
+							</tr>
+							<tr>
+								<td class="shu">Meng Da</th>
+								<td class="wei">Yu Jin</th> 
+								<td class="wu">.</th>
+							</tr>
+							<tr>
+								<td class="shu">Ma Liang</th>
+								<td class="wei">Xu Huang</th> 
+								<td class="wu">.</th>
+							</tr>
+							<tr>
+								<td class="shu">(Zhang Fei)</th>
+								<td class="wei">-Li Dian</th> 
+								<td class="wu">.</th>
+							</tr>
+							<tr>
+								<td class="shu">-Zhang Bao</th>
+								<td class="wei">.</th> 
+								<td class="wu">.</th>
+							</tr>
+						</table>
+						<section>
+							<h3>Triggers/Events</h3>
+							<ul>
+								<h4>Watter Attack</h4>
+								Guan Ping releases the water gates and causes Fan Castle to flood. Causes Alliance to loose morale and troops.
+								<li class="alliance">Kill Guan Ping to prevent flood.</li>
+								<li class="shu">Protect Guan Ping to trigger the flood. (Kill Niu Jin and Yue Jin)</li>
+								<li class="shu">Kill either of Fan Castle's door guard captains to prevent the flood from triggering.</li>
+							</ul>
+							<ul>
+								<h4>Fu Shi Ren and Mi Fang defect</h4>
+								Once WU joins the battle, Xu Sheng will run towards SHU's main camp. Once he reaches Fu Shi Ren and Mi Fang, they will defect.
+								<li class="shu">Kill Xu Sheng to prevent the trigger.</li>
+								<li class="wei">Make sure Xu Sheng reaches Fu Shi Ren and Mi Fang to trigger the defect.</li>
+								<li class="wu">Damage Fu Shi Ren and Mi Fang after Lu Meng orders you to do so to trigger the defect.</li>
+							</ul>
+							<ul>
+								<h4>Guan Yu's death by ambush</h4>
+								Once Fu Shi Ren and Mi Fang defect, Guan Yu will become enraged and chace after them. While chansing them down, he will get ambushed by troops and die.
+								<li class="shu">Kill Xu Sheng before he reaches Fu Shi Ren and Mi Fang to prevent the defect, preventing Guan Yu from leaving the main camp.</li>
+								<li class="wei">Make sure Xu Sheng reaches Fu Shi Ren and Mi Fang to trigger the defect, which triggers Guan Yu.</li>
+								<li class="wu">Damage Fu Shi Ren and Mi Fang after Lu Meng orders you to do so to trigger the defect, which triggers Guan Yu.</li>
+							</ul>
+						</section>
+						<section>
+						<h3>Locations</h3>
+							<ul>
+								<li class="shu">Dim Sum: Dropped by Pang De.</li>
+								<li class="wei">Dim Sum: Dropped by Guan Ping.</li>
+								<li class="wu">Dim Sum: Dropped by Guan Xing.</li>
+								Musou Wine: Inside Fan Castle. Northeast corner of the platform on which Cao Ren battles. </br>
+								Item: Center of the map, western base. West of there. </br>
+								Item:  Center of the map, eastern base. North of there. </br>
+								Weapon: East before the bridge leading to Fan Castle. </br>
+								Combo: West of the northernmost base. </br>
+							</ul>
+						</section>
+					</article>
+				</section>
+			</div>
+		</div>
+
+		<div id="Characters" class="tabcontent">
+			<div class="tabordion">
+				<section>
+					<input type="radio" name="sections">
+					<label for="shu" class="shu">SHU</label>
+					<article>
+					</article>
+				</section>
+				<section>
+					<input type="radio" name="sections" id="guanping">
+					<label for="guanping">Guan Ping</label>
+					<article>
+					</article>
+				</section>
+				<section>
+					<input type="radio" name="sections" id="guanyu">
+					<label for="guanyu">Guan Yu</label>
+					<article>
+					</article>
+				</section>
+				<section>
+					<input type="radio" name="sections">
+					<label for="wei" class="wei">WEI</label>
+					<article>
+					</article>
+				</section>
+				<section>
+					<input type="radio" name="sections" id="caocao">
+					<label for="caocao">Cao Cao</label>
+					<article>
+					</article>
+				</section>
+			</div>
+		</div>
+
+		<div id="Items" class="tabcontent">
+			<h3>Items</h3>
+			<p></p>
+		</div>
+		
+		<div id="Bodyguards" class="tabcontent">
+			<h3>Bodyguards</h3>
+			<p></p>
+		</div>
+		
+		<script>
+			function openSection(evt, sectionName) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablinks");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+				}
+				document.getElementById(sectionName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+		</script>
+	</body>
+</html>
