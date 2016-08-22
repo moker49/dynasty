@@ -2,12 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
-		<script src="jquery.js"></script> 
-		<script> 
-		$(function(){
-		  $("#guanyu").load("char/guanyu.html"); 
-		});
-		</script>
+		<script src="jquery.js"></script>
 	</head>
 	<body>
 		
@@ -240,14 +235,14 @@
 				<p>The second rating determine how high initial stats are and how much they grow.</p>
 				<table>
 					<tr>
-						<th align="left">Ranking</th>
+						<th align="left"></th>
 						<th align="left">Initial stats</th>
 						<th align="left">Stat growth</th>
 					</tr>
 					<tr>
 						<td><b>Veteran</b></td>
 						<td>High</td>
-						<td>Slow</td>
+						<td>Low</td>
 					</tr>
 					<tr>
 						<td><b>Remarkable</b></td>
@@ -256,7 +251,7 @@
 					</tr>
 					<tr>
 						<td><b>Brilliant</b></td>
-						<td>Slow</td>
+						<td>Low</td>
 						<td>High</td>
 					</tr>
 					<tr>
@@ -283,6 +278,11 @@
 					document.getElementById(sectionName).style.display = "block";
 					evt.currentTarget.className += " active";
 				}
+			</script>
+			<script> 
+				$(function(){
+				$("#guanyu").load("char/guanyu.html"); 
+				});
 			</script>
 		</section>
 	</body>
