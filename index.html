@@ -2,7 +2,12 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
-		<script src="jquery.js"></script>
+		<script src="jquery.js"></script> 
+		<script> 
+			$(function(){
+			$("#guanyu").load("char/guanyu.html"); 
+			});
+		</script>
 	</head>
 	<body>
 		
@@ -161,7 +166,7 @@
 				<section>
 					<input type="radio" name="sections" id="guanyu">
 					<label for="guanyu">Guan Yu</label>
-					<article id="guanyu"/>
+					<div id="guanyu"/>
 				</section>
 				<section>
 					<input type="radio" name="sections">
@@ -278,11 +283,6 @@
 					document.getElementById(sectionName).style.display = "block";
 					evt.currentTarget.className += " active";
 				}
-			</script>
-			<script> 
-				$(function(){
-				$("#guanyu").load("char/guanyu.html"); 
-				});
 			</script>
 		</section>
 	</body>
