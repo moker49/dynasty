@@ -3,7 +3,6 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 		<script src="jquery.js" type="text/javascript"></script>
-		<script src="loadchar.js" type="text/javascript"></script>
 	</head>
 	<body>
 		
@@ -264,20 +263,25 @@
 			</article>
 		</div>
 		
-		<script>
-			function openSection(evt, sectionName) {
-				var i, tabcontent, tablinks;
-				tabcontent = document.getElementsByClassName("tabcontent");
-				for (i = 0; i < tabcontent.length; i++) {
-					tabcontent[i].style.display = "none";
+		<section>
+			<script>
+				function openSection(evt, sectionName) {
+					var i, tabcontent, tablinks;
+					tabcontent = document.getElementsByClassName("tabcontent");
+					for (i = 0; i < tabcontent.length; i++) {
+						tabcontent[i].style.display = "none";
+					}
+					tablinks = document.getElementsByClassName("tablinks");
+					for (i = 0; i < tablinks.length; i++) {
+						tablinks[i].className = tablinks[i].className.replace(" active", "");
+					}
+					document.getElementById(sectionName).style.display = "block";
+					evt.currentTarget.className += " active";
 				}
-				tablinks = document.getElementsByClassName("tablinks");
-				for (i = 0; i < tablinks.length; i++) {
-					tablinks[i].className = tablinks[i].className.replace(" active", "");
-				}
-				document.getElementById(sectionName).style.display = "block";
-				evt.currentTarget.className += " active";
-			}
-		</script>
+			</script>
+			<script>
+				("#guanyu").load("char/guanyu.html");
+			</script>
+		</section>
 	</body>
 </html>
