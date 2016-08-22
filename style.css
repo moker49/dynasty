@@ -59,7 +59,7 @@ ul.tab li a:focus, .active {
   width: 180px;
   z-index:100;
 }
-.tabordion section article {
+.tabordion section article .character {
   display: none;
   left: 230px;
   #min-width: 512px;
@@ -69,7 +69,7 @@ ul.tab li a:focus, .active {
   height: 0px;
   width: 80%;
 }
-.tabordion section article:after {
+.tabordion section article:after .character:after {
   background-color: #ccc;
   bottom: 0;
   content: "";
@@ -98,11 +98,11 @@ ul.tab li a:focus, .active {
 	font-size: 1em;
 	width: 160px;
   }
- .tabordion section article {
+ .tabordion section article .character {
 	left: 200px;
 	min-width: 270px;
   } 
-  .tabordion section article:after {
+  .tabordion section article:after .character:after {
 	background-color: #ccc;
 	bottom: 0;
 	content: "";
