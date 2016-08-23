@@ -1,5 +1,8 @@
 /* Tabs */
-body {font-family: "Lato", sans-serif;}
+body {
+	background-color:#ddd;
+	font-family: "Lato", sans-serif;
+}
 ul.tab {
 	list-style-type: none;
 	margin: 0;
